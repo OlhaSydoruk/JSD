@@ -1,0 +1,36 @@
+<template>
+<table class="table-style">
+  <slot></slot>
+</table>
+</template>
+
+<script>
+export default {
+
+  name: "Table-style"
+}
+</script>
+<style scoped>
+.table-style{
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+}
+.table thead th {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  color: #444441;
+  border-top: 2px solid #716561;
+  border-bottom: 2px solid #716561;
+}
+.table tbody td {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444441;
+  border-top: 1px solid #716561;
+}
+</style>
