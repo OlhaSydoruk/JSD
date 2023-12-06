@@ -1,0 +1,49 @@
+<template>
+  <div class="four"> <h1><slot> </slot></h1></div>
+</template>
+
+<script>
+export default {
+  name: "Title"
+}
+</script>
+
+<style scoped>
+
+.four {
+  background: none;
+  text-align: center;
+}
+.four h1 {
+  font-family: 'Merriweather', serif;
+  color: #090707;
+  font-size: 50px;
+  font-weight: normal;
+  padding: 8px 20px 7px 20px;
+  border-top: 4px solid;
+  border-left: 4px solid;
+  display: inline-block;
+  margin: 0;
+  line-height: 1;
+}
+.four h1:before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: -28px;
+  left: -28px;
+  border: 4px solid #070115;
+  box-sizing: border-box;
+}
+@media (max-width: 450px) {
+  .four h1 {font-size: 36px;}
+  .four h1:before {
+    width: 20px;
+    height: 20px;
+    top: -20px;
+    left: -20px;
+  }
+}
+
+</style>
